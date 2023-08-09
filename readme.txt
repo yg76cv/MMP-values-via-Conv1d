@@ -4,7 +4,7 @@ This is the code for "A Lightweight 1D Deep Convolutional Neural Network for MMP
 
 How do I get set up?
 
-The complete source code are provided in main.py. Our code needs python3 environment in Windows 64bit. Besides, the necessary toolkits of python3 are as follows: pandas 1.5.3, numpy1.24.2, matplotlib3.7.1, sklearn1.2.2, torch 1.13.1. You shoud better get these toolkits firstly.
+The complete source code are provided in main.py. Our code needs python3 environment in Windows 64bit. Besides, the necessary toolkits of python3 are as follows: pandas 1.5.3, numpy 1.24.2, matplotlib 3.7.1, sklearn 1.2.2, torch 1.13.1. You shoud better get these toolkits firstly.
 
 Data quesetion
 
