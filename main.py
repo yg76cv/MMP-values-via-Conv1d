@@ -139,59 +139,49 @@ for epoch in range(epochs):
     print("Epoch" + str(epoch + 1) + ":\n\tLoss = " + str(avg_loss)+ ":\n\tMAE = " + str(avg_mae)+ ":\n\tARE = " + str(avg_rerror)+"%"+"\n\tR^2 Score = " + str(avg_r2_score))
 training_endTime = time.time() - training_startingTime
 print(training_endTime)
-##
-# x=np.arange(epochs)
-# y=np.array(lossplot)
-# plt.style.use('seaborn-white')
-# plt.rc('font',family='Times New Roman', size=10,weight=5)
-# fig=plt.figure(figsize=(4, 4), dpi=100)
-# ax1 = axisartist.Subplot(fig, 111)
-# fig.add_axes(ax1)
-# #通过set_axisline_style方法设置绘图区的底部及左侧坐标轴样式
-# #"-|>"代表实心箭头："->"代表空心箭头
-# ax1.axis["bottom"].set_axisline_style("-|>", size = 1)
-# ax1.axis["left"].set_axisline_style("-|>", size = 1)
-# ax1.axis["top"].set_visible(False)
-# ax1.axis["right"].set_visible(False)
-# plt.plot(x,y,linewidth=1.5,color='b')
-#
-#
-#
-# plt.xlabel("Iteration step")
-# plt.grid(True,linestyle="--",color='black', alpha=0.5)
-# plt.ylabel("Loss")
-# plt.savefig("loss.pdf",format="pdf")
-# plt.show()
+## Fig3.a
+ x=np.arange(epochs)
+ y=np.array(lossplot)
+ plt.style.use('seaborn-white')
+ plt.rc('font',family='Times New Roman', size=10,weight=5)
+ fig=plt.figure(figsize=(4, 4), dpi=100)
+ ax1 = axisartist.Subplot(fig, 111)
+ fig.add_axes(ax1)
+ ax1.axis["bottom"].set_axisline_style("-|>", size = 1)
+ ax1.axis["left"].set_axisline_style("-|>", size = 1)
+ ax1.axis["top"].set_visible(False)
+ ax1.axis["right"].set_visible(False)
+ plt.plot(x,y,linewidth=1.5,color='b')
+ plt.xlabel("Iteration step")
+ plt.grid(True,linestyle="--",color='black', alpha=0.5)
+ plt.ylabel("Loss")
+ plt.savefig("loss.pdf",format="pdf")
+ plt.show()
 
 #
-# plt.rc('font',family='Times New Roman', size=10,weight=5)
+ plt.rc('font',family='Times New Roman', size=10,weight=5)
 #
-# fig=plt.figure(figsize=(4, 4), dpi=100)
-# ax1 = axisartist.Subplot(fig, 111)
-# fig.add_axes(ax1)
-# #通过set_axisline_style方法设置绘图区的底部及左侧坐标轴样式
-# #"-|>"代表实心箭头："->"代表空心箭头
-# ax1.axis["bottom"].set_axisline_style("-|>", size = 1)
-# ax1.axis["left"].set_axisline_style("-|>", size = 1)
-# ax1.axis["top"].set_visible(False)
-# ax1.axis["right"].set_visible(False)
-#
-# #plt.plot(range(len(out)), out,  'go',label = 'data', alpha = 0.3)  ##go 散点
-# plt.scatter(pr, out, color='b',label = 'predicted',alpha = 1)
-#
-# plt.plot([pr.min(), pr.max()], [out.min(), out.max()], 'r--', lw=3, label = 'fitted line')
-# plt.xlabel("True Values")
-# plt.ylabel("Predictions")
-# lims = [0,40]
-# plt.xlim(lims)
-# plt.ylim(lims)
-#
-# font={'family':'Times New Roman','weight':'normal'
-#         ,'size':9}
-# plt.legend(loc = 'upper left',prop=font,frameon=True)
-#
-# plt.grid(True,linestyle="--",color='black', alpha=0.5)
-# plt.tick_params(top = 'off', right = 'off')
+fig=plt.figure(figsize=(4, 4), dpi=100)
+ax1 = axisartist.Subplot(fig, 111)
+fig.add_axes(ax1)
+ax1.axis["bottom"].set_axisline_style("-|>", size = 1)
+ax1.axis["left"].set_axisline_style("-|>", size = 1)
+ax1.axis["top"].set_visible(False)
+ax1.axis["right"].set_visible(False)
+ plt.scatter(pr, out, color='b',label = 'predicted',alpha = 1)
+plt.plot([pr.min(), pr.max()], [out.min(), out.max()], 'r--', lw=3, label = 'fitted line')
+plt.xlabel("True Values")
+plt.ylabel("Predictions")
+lims = [0,40]
+plt.xlim(lims)
+ plt.ylim(lims)
+font={'family':'Times New Roman','weight':'normal'
+       ,'size':9}
+ plt.legend(loc = 'upper left',prop=font,frameon=True)
+
+ plt.grid(True,linestyle="--",color='black', alpha=0.5)
+ plt.tick_params(top = 'off', right = 'off')
+plt.show()
 # plt.savefig("1trainfitten.pdf",format="pdf")
 
 
