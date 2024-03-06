@@ -1,6 +1,6 @@
 What is this repository for?
 
-This is the code for "A Lightweight 1D Deep Convolutional Neural Network for MMP Prediction in CO2-EOR Process" The codes will be included after final acceptance for publishing the related scientific paper.
+This is the code for "Unveiling the Effect of Complex Components on CO2-oil Minimum Miscibility Pressure: insights from Deep Convolutional Neural Networks" The codes will be included after final acceptance for publishing the related scientific paper.
 
 How do I get set up?
 
